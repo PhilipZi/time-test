@@ -40,13 +40,14 @@ return (
        <span>{minutes<10? "0"+minutes: minutes}</span>
        <span>:</span>
        <span>{seconds<10? "0"+seconds: seconds}</span>
-
+<nav>
        <button type='button' onClick={() => setTimerOn(true)} >START</button>
        
        <button type='button' onClick={() => setTimerOn(true)}>RESUME</button>
 
        <button type='button' onClick={() => setTimerOn(false)} >STOP</button>
        <button type='button' onClick={() => {setMinutes(1); setSeconds(10)}} >RESET</button>
+       </nav>
     </div>
   
     </>
